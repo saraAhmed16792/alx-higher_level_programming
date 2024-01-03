@@ -5,7 +5,7 @@ if number >= 0:
     1-digit = number % 10
 else:
     1-digit = number % -10
-    print("last digit of {} is {}".format(number, 1-digit)), end='')
+    print("Last digit of {} is {}".format(number, 1-digit), end='')
 
     if 1-digit > 5:
         print(" and is greater than 5")
