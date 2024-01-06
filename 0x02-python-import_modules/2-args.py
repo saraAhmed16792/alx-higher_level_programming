@@ -4,15 +4,10 @@ if __name__ == "__main__":
     i = len(sys.argv) - 1
 
     if i == 0:
-        print("{} argumants.".format(i))
+        print("0 arguments.")
     elif i == 1:
-        print("{} argumant:".format(i))
+        print("1 argumant:")
     else:
-        print("{} argumants:".format(i))
-
-        if i >= 1:
-            i = 0
-            for arg in sys.argv:
-                if i != 0:
-                    print("{}: {}".format(i, arg))
-                    i += 1
+        print("{} arguments:".format(i))
+        for i in range(i):
+            print("{}: {}".format(i + 1, sys.argv[i + 1]))
